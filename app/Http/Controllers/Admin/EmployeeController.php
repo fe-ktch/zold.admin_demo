@@ -22,12 +22,13 @@ class EmployeeController extends Controller
     {
 
         $employees = Employee::all();
-        return EmployeeResource::collection(Employee::all());
-
+        return view('admin.employees.index', compact('employees'));
+        
         /*
         $employees = Employee::all();
+        return EmployeeResource::collection(Employee::all());
 
-        return view('admin.employees.index', compact('employees'));*/
+        */
     }
 
     /**

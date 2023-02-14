@@ -38,12 +38,12 @@
                     <span>{{ __('Services') }}</span></a>
             </li>
 
-            <!-- employees 
+            <!-- employees -->
             <li class="nav-item {{ request()->is('admin/employees') || request()->is('admin/employees') ? 'active' : '' }}">
                 <a class="nav-link" href="{{ route('admin.employees.index') }}">
                 <i class="fas fa-cogs"></i>
                     <span>{{ __('Employees') }}</span></a>
-            </li>-->
+            </li>
 
             <!-- clients -->
             <li class="nav-item {{ request()->is('admin/clients') || request()->is('admin/clients') ? 'active' : '' }}">

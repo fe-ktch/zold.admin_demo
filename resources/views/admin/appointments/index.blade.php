@@ -17,7 +17,7 @@
                         <span class="icon text-white-50">
                             <i class="fa fa-plus"></i>
                         </span>
-                        <span class="text">{{ __('New appointment') }}</span>
+                        <span class="text">{{ __('New Appointment') }}</span>
                     </a>
                 </div>
             </div>

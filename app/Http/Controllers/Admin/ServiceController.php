@@ -19,12 +19,13 @@ class ServiceController extends Controller
     {
 
         $services = Service::all();
-        return ServiceResource::collection(Service::all());
+        return view('admin.services.index', compact('services'));
+
 
         /*
         $services = Service::all();
-
-        return view('admin.services.index', compact('services'));*/
+        return ServiceResource::collection(Service::all());
+       */
     }
 
     /**

@@ -21,12 +21,12 @@ class AppointmentController extends Controller
      */
     public function index()
     {
-        $appointments = Appointment::all();
-        return AppointmentResource::collection(Appointment::all());
-
         /*
+        return AppointmentResource::collection(Appointment::all());*/
+
         
-        return view('admin.appointments.index', compact('appointments'));*/
+        $appointments = Appointment::all();
+        return view('admin.appointments.index', compact('appointments'));
     }
 
     /**
